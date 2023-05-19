@@ -131,6 +131,36 @@ ul{
     display: none;
 }
 
+.nav-links ul ul{
+    position: absolute;
+    top: 90px;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+.nav-links ul ul li{
+    position: relative;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+}
+.nav-links ul ul li a{
+    line-height: 50px;
+}
+.nav-links ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100px;
+    background-color: transparent;
+}
+.nav-links ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+
 /* header section  */
 
 header{
